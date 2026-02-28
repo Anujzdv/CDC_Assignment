@@ -6,7 +6,7 @@ public:
         for(int i = 0; i< nums.size(); i++){
             if(m.find(target - nums[i]) == m.end()){
                 m[nums[i]] = i;
-            }else if((m.find(target - nums[i]) != m.end())){
+            }else{
                 res.push_back((m.find(target - nums[i])->second));
                 res.push_back(i);
             }
