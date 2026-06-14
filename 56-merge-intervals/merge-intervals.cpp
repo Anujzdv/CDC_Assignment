@@ -10,8 +10,7 @@ public:
             int currst = itr[i][0];
             int currend = itr[i][1];
             if(prvend >= currst){
-                int lidx = ans.size();
-                ans[lidx -1][1] = max(currend, prvend);
+                ans.back()[1] = max(currend, prvend);
             }else{
                 ans.push_back(itr[i]);
             }
